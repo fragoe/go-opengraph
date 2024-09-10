@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dyatlov/go-opengraph/opengraph"
+	"github.com/fragoe/go-opengraph/opengraph"
 )
 
 const html = `

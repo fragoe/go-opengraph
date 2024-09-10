@@ -5,7 +5,7 @@ Parses given html data into Facebook OpenGraph structure.
 
 To download and install this package run:
 
-`go get github.com/dyatlov/go-opengraph/opengraph`
+`go get github.com/fragoe/go-opengraph/opengraph`
 
 *NOTE: if you need to grab as much info from a page as possible consider using [dyatlov/go-htmlinfo](https://github.com/dyatlov/go-htmlinfo)*
 
@@ -14,7 +14,7 @@ The package supports the whole set of OpenGraph properties from [The Open Graph 
 ## Command line tool
 
 You can also use `opengraph` from CLI.
-You can download latest version of `opengraph` for your OS from [Releases](https://github.com/dyatlov/go-opengraph/releases).
+You can download latest version of `opengraph` for your OS from [Releases](https://github.com/fragoe/go-opengraph/releases).
 
 You can query website endpoints using the tool directly or use it with other tools for your own workflows.
 
@@ -43,7 +43,7 @@ curl https://www.youtube.com/watch\?v\=yhoI42bdwU4 | ./opengraph
  * `ToJSON() (string, error)` - return JSON representation of data or error
  * `String() string` - return JSON representation of structure
 
-Source docs: http://godoc.org/github.com/dyatlov/go-opengraph/opengraph
+Source docs: http://godoc.org/github.com/fragoe/go-opengraph/opengraph
 
 If you just need to parse an OpenGraph data from HTML then method `ProcessHTML` is your needed one.
 
@@ -56,7 +56,7 @@ import (
   "fmt"
   "strings"
 
-  "github.com/dyatlov/go-opengraph/opengraph"
+  "github.com/fragoe/go-opengraph/opengraph"
 )
 
 func main() {
@@ -91,7 +91,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dyatlov/go-opengraph/opengraph"
+	"github.com/fragoe/go-opengraph/opengraph"
 	"golang.org/x/net/html"
 )
 

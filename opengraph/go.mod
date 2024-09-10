@@ -1,4 +1,4 @@
-module github.com/dyatlov/go-opengraph/opengraph
+module github.com/fragoe/go-opengraph/opengraph
 
 go 1.7
 

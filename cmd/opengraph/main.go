@@ -25,7 +25,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dyatlov/go-opengraph/opengraph"
+	"github.com/fragoe/go-opengraph/opengraph"
 )
 
 const appVersion = "1.0.1"
