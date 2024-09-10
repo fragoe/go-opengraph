@@ -143,6 +143,8 @@ func (og *OpenGraph) ProcessMeta(metaAttrs map[string]string) {
 		og.Images = image.AddSecureURL(og.Images, metaAttrs["content"])
 	case "og:image:type":
 		og.Images = image.AddType(og.Images, metaAttrs["content"])
+	case "og:image:alt":
+		og.Images = image.AddType(og.Images, metaAttrs["content"])
 	case "og:image:width":
 		w, err := strconv.ParseUint(metaAttrs["content"], 10, 64)
 		if err == nil {

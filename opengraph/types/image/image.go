@@ -7,6 +7,7 @@ type Image struct {
 	Type      string `json:"type"`
 	Width     uint64 `json:"width"`
 	Height    uint64 `json:"height"`
+	Alt       string `json:"alt"`
 }
 
 func NewImage() *Image {
@@ -49,5 +50,11 @@ func AddWidth(images []*Image, v uint64) []*Image {
 func AddHeight(images []*Image, v uint64) []*Image {
 	images = ensureHasImage(images)
 	images[len(images)-1].Height = v
+	return images
+}
+
+func AddAlt(images []*Image, v string) []*Image {
+	images = ensureHasImage(images)
+	images[len(images)-1].Alt = v
 	return images
 }
