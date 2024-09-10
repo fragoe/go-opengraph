@@ -24,17 +24,17 @@ type OpenGraph struct {
 	isArticle        bool
 	isBook           bool
 	isProfile        bool
-	Type             string           `json:"type"`
-	URL              string           `json:"url"`
-	Title            string           `json:"title"`
-	Description      string           `json:"description"`
-	Determiner       string           `json:"determiner"`
-	SiteName         string           `json:"site_name"`
-	Locale           string           `json:"locale"`
-	LocalesAlternate []string         `json:"locales_alternate"`
-	Images           []*image.Image   `json:"images"`
-	Audios           []*audio.Audio   `json:"audios"`
-	Videos           []*video.Video   `json:"videos"`
+	Type             string           `json:"type,omitempty"`
+	URL              string           `json:"url,omitempty"`
+	Title            string           `json:"title,omitempty"`
+	Description      string           `json:"description,omitempty"`
+	Determiner       string           `json:"determiner,omitempty"`
+	SiteName         string           `json:"site_name,omitempty"`
+	Locale           string           `json:"locale,omitempty"`
+	LocalesAlternate []string         `json:"locales_alternate,omitempty"`
+	Images           []*image.Image   `json:"images,omitempty"`
+	Audios           []*audio.Audio   `json:"audios,omitempty"`
+	Videos           []*video.Video   `json:"videos,omitempty"`
 	Article          *article.Article `json:"article,omitempty"`
 	Book             *book.Book       `json:"book,omitempty"`
 	Profile          *profile.Profile `json:"profile,omitempty"`

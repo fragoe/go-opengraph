@@ -4,10 +4,10 @@ import "strings"
 
 // Profile contain Open Graph Profile structure
 type Profile struct {
-	FirstName string `json:"first_name"`
-	LastName  string `json:"last_name"`
-	Username  string `json:"username"`
-	Gender    string `json:"gender"`
+	FirstName string `json:"first_name,omitempty"`
+	LastName  string `json:"last_name,omitempty"`
+	Username  string `json:"username,omitempty"`
+	Gender    string `json:"gender,omitempty"`
 }
 
 func NewProfile() *Profile {

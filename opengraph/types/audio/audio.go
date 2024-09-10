@@ -2,9 +2,9 @@ package audio
 
 // Audio defines Open Graph Audio Type
 type Audio struct {
-	URL       string `json:"url"`
-	SecureURL string `json:"secure_url"`
-	Type      string `json:"type"`
+	URL       string `json:"url,omitempty"`
+	SecureURL string `json:"secure_url,omitempty"`
+	Type      string `json:"type,omitempty"`
 }
 
 func NewAudio() *Audio {

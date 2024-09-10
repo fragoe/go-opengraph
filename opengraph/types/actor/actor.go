@@ -2,8 +2,8 @@ package actor
 
 // Actor contain Open Graph Actor structure
 type Actor struct {
-	Profile string `json:"profile"`
-	Role    string `json:"role"`
+	Profile string `json:"profile,omitempty"`
+	Role    string `json:"role,omitempty"`
 }
 
 func NewActor() *Actor {

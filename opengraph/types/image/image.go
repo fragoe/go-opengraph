@@ -2,12 +2,12 @@ package image
 
 // Image defines Open Graph Image type
 type Image struct {
-	URL       string `json:"url"`
-	SecureURL string `json:"secure_url"`
-	Type      string `json:"type"`
-	Width     uint64 `json:"width"`
-	Height    uint64 `json:"height"`
-	Alt       string `json:"alt"`
+	URL       string `json:"url,omitempty"`
+	SecureURL string `json:"secure_url,omitempty"`
+	Type      string `json:"type,omitempty"`
+	Width     uint64 `json:"width,omitempty"`
+	Height    uint64 `json:"height,omitempty"`
+	Alt       string `json:"alt,omitempty"`
 }
 
 func NewImage() *Image {

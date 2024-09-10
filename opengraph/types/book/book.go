@@ -6,8 +6,8 @@ import (
 
 // Book contains Open Graph Book structure
 type Book struct {
-	ISBN        string     `json:"isbn"`
-	ReleaseDate *time.Time `json:"release_date"`
-	Tags        []string   `json:"tags"`
-	Authors     []string   `json:"authors"`
+	ISBN        string     `json:"isbn,omitempty"`
+	ReleaseDate *time.Time `json:"release_date,omitempty"`
+	Tags        []string   `json:"tags,omitempty"`
+	Authors     []string   `json:"authors,omitempty"`
 }

@@ -8,11 +8,11 @@ import (
 
 // Video defines Open Graph Video type
 type Video struct {
-	URL         string         `json:"url"`
-	SecureURL   string         `json:"secure_url"`
-	Type        string         `json:"type"`
-	Width       uint64         `json:"width"`
-	Height      uint64         `json:"height"`
+	URL         string         `json:"url,omitempty"`
+	SecureURL   string         `json:"secure_url,omitempty"`
+	Type        string         `json:"type,omitempty"`
+	Width       uint64         `json:"width,omitempty"`
+	Height      uint64         `json:"height,omitempty"`
 	Actors      []*actor.Actor `json:"actors,omitempty"`
 	Directors   []string       `json:"directors,omitempty"`
 	Writers     []string       `json:"writers,omitempty"`

@@ -10,8 +10,8 @@ type Music struct {
 	Creators    []string   `json:"creators,omitempty"`
 	Duration    uint64     `json:"duration,omitempty"`
 	ReleaseDate *time.Time `json:"release_date,omitempty"`
-	Album       *Album     `json:"album"`
-	Songs       []*Song    `json:"songs"`
+	Album       *Album     `json:"album,omitempty"`
+	Songs       []*Song    `json:"songs,omitempty"`
 }
 
 type Album struct {
